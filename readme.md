@@ -97,19 +97,53 @@ The Product Management API allows you to perform CRUD operations on products. Ea
 }
 ```
 
-### 4. Delete Product
-**Endpoint**: `DELETE /product/{pid}/delete`
+### 4. List all Products
+**Endpoint**: `GET /product/product/list`
 
-**Description**: This endpoint deletes a product by its unique ID.
+**Description**: This endpoint Lists All Products 
 
-**Request Parameters**:
-- `pid`: The product ID (integer).
 
 **Response Example**:
 
 ```json
-{
-  "message": "Product successfully deleted"
-}
+[
+  {
+    "name": "Test34324242",
+    "category": "finished",
+    "description": "This is a test product",
+    "product_image": "http://example.com/image.jpg",
+    "sku": "34343",
+    "unit_of_measure": "unit",
+    "lead_time": 10,
+    "id": 1,
+    "created_date": "2024-12-12T10:42:09",
+    "updated_date": "2024-12-12T10:51:40"
+  },
+  {
+    "name": "Test 1",
+    "category": "semi-finished",
+    "description": "This is a test product",
+    "product_image": "http://example.com/image.jpg",
+    "sku": "SKU12335",
+    "unit_of_measure": "unit",
+    "lead_time": 10,
+    "id": 8,
+    "created_date": "2024-12-12T10:48:39",
+    "updated_date": "2024-12-12T10:48:39"
+  },
+  {
+    "name": "Test 1",
+    "category": "semi-finished",
+    "description": "This is a test product",
+    "product_image": "http://example.com/image.jpg",
+    "sku": "SKU123335",
+    "unit_of_measure": "unit",
+    "lead_time": 10,
+    "id": 9,
+    "created_date": "2024-12-12T10:49:10",
+    "updated_date": "2024-12-12T10:49:10"
+  }
+]
+```
 
 
